@@ -1,0 +1,99 @@
+@media only screen and (max-width:768px) {
+
+    div {
+        margin: auto;
+    }
+    
+    #a {
+        width: 478px;
+        height: 73px;
+        line-height: 73px;
+    }
+    
+    #b {
+        width: 478px;
+        height: 148px;
+        line-height: 148px;
+    }
+    
+    #c, #d {
+        width: 478px;
+        height: 123px;
+        line-height: 123px;
+    }
+    
+    #e, #f {
+        width: 238px;
+        height: 246px;
+        line-height: 246px;
+    }    
+    
+    #g, #h {
+        width: 238px;
+        height: 246px;
+        line-height: 246px;
+    }
+    
+    #e, #g {
+        float: left;
+    }
+    
+    #i { 
+        width: 478px;
+        height: 73px;
+    }
+    
+    .sideBySide {
+        max-width: 480px;
+        max-height: 250px;
+    }
+    }
+    
+    @media only screen and (min-width: 769px) {
+    
+    #contOne{
+        float: left;
+    }
+    
+    #a {
+        width: 958px;
+        height: 98px;
+        line-height: 98px;
+    }
+    
+    #b {
+        width: 198px;
+        height: 598px;
+        float: left;
+        line-height: 598px;
+    }
+    #c, #d {
+        width: 378px;
+        height: 198px;
+        line-height: 198px;
+    }
+    
+    #c {
+        float: left;
+    }
+    
+    #e, #f, #g, #h {
+        width: 188px;
+        height: 248px;
+        line-height: 248px;
+    }
+    
+    #e, #g {
+        float: left;
+    }    
+    
+    #i {
+        width: 758px;
+        height: 148px;
+        line-height: 148px;
+    }
+    
+    #sideBySide {
+        width: 760px;
+    }
+    }
