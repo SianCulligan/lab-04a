@@ -1,0 +1,42 @@
+body {
+    width: 480px;
+    height: 767px; 
+    margin: auto;
+}
+
+.letter {
+    display: inline-flex;
+    /* border: 1px solid black; */
+    width: 100%;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.letter:hover {
+    transition: 1s ease-out;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    /* SRC: https://cssgradient.io/ */
+}
+#a {
+    height: 75px;
+}
+
+#b {
+    height: 150px;
+}
+
+#c, #d {
+    height: 12px;
+}
+
+#e, #f, #g, #h {
+    width: 50%;
+    height: 248px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -4px;
+}
+
+#i {
+    height: 80px;
+}
