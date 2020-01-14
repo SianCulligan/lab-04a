@@ -6,11 +6,15 @@ body {
 
 
 
-/* @media only screen and (min-width: 2px) and (max-width: 640px) {
+ @media only screen and (min-width: 2px) and (max-width: 640px) {
 
 body {
+    margin: auto;
+    background-repeat: space;
+    background-size: 1200px;
     width: 480px; 
     background-image: url(https://images.unsplash.com/photo-1523956028025-95b0b9efe908?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2458&q=80);
+    background-position: bottom;
 }
 
 .letter {
@@ -74,14 +78,15 @@ body {
     background-color: rgba(216, 216, 216, 0.877);
     color: black;
 }
-}
+} 
 
 @media only screen and (min-width: 641px) and (max-width: 800px) {
     body {
+        margin: auto;
         width: 641px; 
         background-image: url(https://previews.123rf.com/images/vitmann/vitmann1706/vitmann170600006/79797257-glitch-psychedelic-background-old-tv-screen-error-digital-pixel-noise-abstract-design-photo-glitch-t.jpg);
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
         background-size: cover;
     }
     
@@ -196,63 +201,123 @@ body {
           text-shadow: 0px 0px 29px rgb(242, 22, 231);
         }
       }
-} */
+} 
 
 @media only screen and (min-width: 801px) {
-    
-    body {
-    width: 960px; 
-    background-image: url(https://s3.amazonaws.com/mk-website-media/wp-content/uploads/2018/10/19001904/Wallpaper-IngridMika-BWStripe-1-1100x1318.jpg);
-    background-position: center;
-    background-repeat: repeat-y;
-}
 
-    .letter {
-        width: 100%;
-        border: 1px dashed black;
-        flex-direction: row;
+    body {
+        width: 960px; 
+        background-image: url(https://s3.amazonaws.com/mk-website-media/wp-content/uploads/2018/10/19001904/Wallpaper-IngridMika-BWStripe-1-1100x1318.jpg);
+        background-position: center;
+        background-repeat: repeat-y;
+    }
+    .letter, header {
+        outline: 1px dashed black;
         background-color: lightpink;
         font-family: 'Pacifico', cursive;
         font-weight: bolder;
         text-align: center;
-        width: 20%;
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-    } 
-
-    #a {
-        height: 100px;
+    }
+    
+    header {
         width: 100%;
+        margin: auto;
+        height: 100px;
+    }
+/*     
+    #b {
+        grid-area: b;
+      }
+    #c {
+        grid-area: c;
+      }
+    #d {
+        grid-area: d;
+      }
+    #e {
+        grid-area: e;
+      }
+      #f {
+        grid-area: f;
+      }
+      #g {
+        grid-area: g;
+      }
+      #h {
+        grid-area: h;
+      }
+      #i {
+        grid-area: i;
+      } */
+    main {
+        width: 960px;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 200px 190px 190px 190px 190px;
+        grid-template-rows: 200px 250px 150px;
+        outline: red;
+        background-color: lightsteelblue;
+        grid-template-areas: 
+        "b c c d d"
+        "b e f g h"
+        "b i i i i";
+}
+
+    #b {
+    /* grid-row-start, grid-column-start, grid-row-end, followed by grid-column-end.*/
+        grid-area: 1 / 1 / 5 / 1;
+        background-color: rgb(255, 161, 175);
+      }
+
+    #c {
+        grid-area: 1 / 2 / 1 / 4;
+        background-color: rgb(252, 137, 154);
+        width: 380px;
+        height: 200px;
+    }
+    #d {
+        grid-area: 1 / 4 / 1 / 6;
+        background-color: rgb(250, 115, 135);
+        width: 380px;
+        height: 200px;
     }
 
+    /* 
+
+    #i { 
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 2; 
+    }  */
+ /*
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+
+    }
     #b {
         width: 200px;
         height: 600px;
-        line-height: 600px;
-        font-size: 55px;
-    }
+   } 
 
     #c, #d {
-        width: 380px;
+        width: 350px;
         height: 200px;
-        font-size: 55px;
+        margin-right: -3px;
     }
 
-    #i { 
-        width: 760px;
-        height: 150px;
-    } 
+    /*  #contThree{
+        display: inline-flex;
+    }
+
+    #e, #f, #g, #h {
+        width: 100px;
+        height: 100px;
+        flex-direction: row;
+    }
+
+    .overallSection {
+        display: inline-flex;
+    }
+    */ 
 }
-    /* #e, #f, #g, #h {
-        width: 22%;
-        height: 248px;
-        display: inline-table;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-right: -4px;
-    } */
-
-
-
