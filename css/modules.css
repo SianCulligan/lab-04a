@@ -5,6 +5,8 @@ body {
     background-size: 100%;
 }
 
+
+
  @media only screen and (min-width: 2px) and (max-width: 640px) {
 
 body {
@@ -68,6 +70,7 @@ body {
     color: rgb(80, 80, 80);  
 }
 
+#g, #h {
 #contTwo {
     background-color: rgba(180, 180, 180, 0.877);;
     color: rgb(40, 40, 40);  
@@ -89,6 +92,7 @@ body {
         background-size: cover;
     }
     
+    #a, .letter {
     .letter {
         display: inline-flex;
         width: 100%;
@@ -144,11 +148,13 @@ body {
         margin-right: -4px;
     }
     
+    #e, #f {
     #contOne {
         background-color: rgba(144, 144, 144, 0.877);;
         color: rgb(80, 80, 80);  
     }
     
+    #g, #h {
     #contTwo {
         background-color: rgba(180, 180, 180, 0.877);;
         color: rgb(40, 40, 40);  
@@ -221,6 +227,10 @@ body {
     header {
         width: 100%;
         margin: auto;
+        margin-top: 50px;
+        height: 100px;
+    }
+
         height: 100px;
     }
 /*     
@@ -254,6 +264,32 @@ body {
         display: grid;
         grid-template-columns: 200px 190px 190px 190px 190px;
         grid-template-rows: 200px 250px 150px;
+}
+
+    #b {
+        grid-column: 1 / 1;
+        grid-row: 1 / 5 ;
+      }
+
+
+    #c {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2 ;
+ 
+    }
+
+    #d {
+        grid-column: 4 / 6;
+        grid-row: 1 / 2 ;
+   
+    }
+
+    #i {
+        grid-column: 2 / 6;
+        grid-row: 3 / 5 ;
+
+    }
+
         outline: red;
         background-color: lightsteelblue;
         grid-template-areas: 
