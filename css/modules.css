@@ -1,4 +1,5 @@
 body {
+
     margin: auto;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -70,6 +71,7 @@ body {
 }
 
 #g, #h {
+#contTwo {
     background-color: rgba(180, 180, 180, 0.877);;
     color: rgb(40, 40, 40);  
 }
@@ -91,6 +93,7 @@ body {
     }
     
     #a, .letter {
+    .letter {
         display: inline-flex;
         width: 100%;
         flex-direction: column;
@@ -146,11 +149,13 @@ body {
     }
     
     #e, #f {
+    #contOne {
         background-color: rgba(144, 144, 144, 0.877);;
         color: rgb(80, 80, 80);  
     }
     
     #g, #h {
+    #contTwo {
         background-color: rgba(180, 180, 180, 0.877);;
         color: rgb(40, 40, 40);  
     }
@@ -226,6 +231,33 @@ body {
         height: 100px;
     }
 
+        height: 100px;
+    }
+/*     
+    #b {
+        grid-area: b;
+      }
+    #c {
+        grid-area: c;
+      }
+    #d {
+        grid-area: d;
+      }
+    #e {
+        grid-area: e;
+      }
+      #f {
+        grid-area: f;
+      }
+      #g {
+        grid-area: g;
+      }
+      #h {
+        grid-area: h;
+      }
+      #i {
+        grid-area: i;
+      } */
     main {
         width: 960px;
         height: 700px;
@@ -258,4 +290,69 @@ body {
 
     }
 
+        outline: red;
+        background-color: lightsteelblue;
+        grid-template-areas: 
+        "b c c d d"
+        "b e f g h"
+        "b i i i i";
+}
+
+    #b {
+    /* grid-row-start, grid-column-start, grid-row-end, followed by grid-column-end.*/
+        grid-area: 1 / 1 / 5 / 1;
+        background-color: rgb(255, 161, 175);
+      }
+
+    #c {
+        grid-area: 1 / 2 / 1 / 4;
+        background-color: rgb(252, 137, 154);
+        width: 380px;
+        height: 200px;
+    }
+    #d {
+        grid-area: 1 / 4 / 1 / 6;
+        background-color: rgb(250, 115, 135);
+        width: 380px;
+        height: 200px;
+    }
+
+    /* 
+
+    #i { 
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 2; 
+    }  */
+ /*
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+
+    }
+    #b {
+        width: 200px;
+        height: 600px;
+   } 
+
+    #c, #d {
+        width: 350px;
+        height: 200px;
+        margin-right: -3px;
+    }
+
+    /*  #contThree{
+        display: inline-flex;
+    }
+
+    #e, #f, #g, #h {
+        width: 100px;
+        height: 100px;
+        flex-direction: row;
+    }
+
+    .overallSection {
+        display: inline-flex;
+    }
+    */ 
 }
